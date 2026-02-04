@@ -12,6 +12,10 @@ public class ComputerNumber {
 
 	private final List<Integer> numbers;
 
+	public ComputerNumber(List<Integer> numbers) {
+		this.numbers = numbers;
+	}
+
 	public ComputerNumber() {
 		this.numbers = generate();
 	}
