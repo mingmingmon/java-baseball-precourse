@@ -28,6 +28,10 @@ public class Result {
 		return this.ball;
 	}
 
+	public boolean isThreeStrike() {
+		return this.strike == 3 && this.ball == 0;
+	}
+
 	@Override
 	public String toString() {
 		if (strike == 0 && ball == 0) {
