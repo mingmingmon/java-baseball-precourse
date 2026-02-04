@@ -39,8 +39,8 @@ public class JudgeTest {
 	@Test
 	@DisplayName("플레이어 숫자가 중복되어도 규칙에 맞게 판정한다")
 	void judgeHandlesDuplicatePlayerNumber() {
-		ComputerNumber computer = TestComputerNumber.of(1, 2, 3);
-		PlayerNumber player = new PlayerNumber("111");
+		ComputerNumber computer = TestComputerNumber.of(4, 2, 7);
+		PlayerNumber player = new PlayerNumber("223");
 
 		Result result = judge.judge(computer, player);
 		assertThat(result.getStrike()).isEqualTo(1);
