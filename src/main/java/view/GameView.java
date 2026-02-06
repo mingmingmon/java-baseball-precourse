@@ -27,6 +27,6 @@ public class GameView {
 	}
 
 	public void printErrorMessage(String message) {
-		System.out.println(message);
+		System.out.println("[ERROR] " + message);
 	}
 }
